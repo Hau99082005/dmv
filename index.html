@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMV TEST APP</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="image/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="image/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="bootstrap/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+
+<body>
+    <svg class="position-absolute top-0 start-0" width="120" height="120" style="z-index:0;" fill="none">
+      <circle cx="60" cy="60" r="60" fill="#2dd4bf22"/>
+    </svg>
+
+    <header class="sticky-top bg-white" style="z-index: 1000;">
+        <nav class="navbar navbar-expand-lg navbar-light py-0" style="min-height:64px; background-color: #ffffff; border-bottom: 1px solid #e0e0e0;">
+            <div class="container d-flex align-items-center justify-content-between flex-nowrap" style="min-height:64px;">
+                <div class="d-flex flex-column align-items-start justify-content-center" style="min-width:150px;">
+                    <a class="navbar-brand d-flex align-items-center p-0 m-0" href="index.html" style="height:48px;">
+                        <img src="image/logo.jpg" alt="Logo" width="50" height="50" class="me-2">
+                        <span class="fw-semibold fs-5 mb-0" style="letter-spacing:1.5px; color:black; font-size:1.15rem;">DMV TEST APP</span>
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse d-lg-flex align-items-center justify-content-center flex-grow-1" id="navbarNav">
+                    <ul class="navbar-nav flex-lg-row flex-column align-items-lg-center align-items-center gap-3 mb-0 w-100 justify-content-center" style="font-size:1rem;">
+                        <li class="nav-item"><a class="nav-link text-uppercase fw-medium px-2" href="index.html" style="letter-spacing:0.5px; color: #000000; transition: color 0.3s ease;" onmouseover="this.style.color='#007bff'" onmouseout="this.style.color='#000000'">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase fw-medium px-2" href="index.html#features" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="letter-spacing:0.5px; color: #000000; transition: color 0.3s ease;" onmouseover="this.style.color='#007bff'"
+                                onmouseout="this.style.color='#000000'">Features</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase fw-medium px-2" href="index.html#about" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="letter-spacing:0.5px; color: #000000; transition: color 0.3s ease;" onmouseover="this.style.color='#007bff'"
+                                onmouseout="this.style.color='#000000'">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-uppercase fw-medium px-2" href="index.html#contact" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="letter-spacing:0.5px; color: #000000; transition: color 0.3s ease;" onmouseover="this.style.color='#007bff'"
+                                onmouseout="this.style.color='#000000'">Contact</a></li>
+                        <li class="nav-item d-lg-none my-3 w-100">
+                            <a href="#download" class="btn text-uppercase fw-bold w-100 py-3" style="letter-spacing:1px; background: #007bff; border: 2px solid #007bff; border-radius:32px; font-size:1.05rem; color: #ffffff;">Download Now</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn-close d-lg-none ms-auto mt-3 me-3" aria-label="Close"></button>
+                </div>
+                <div class="d-none d-lg-flex align-items-center ms-3">
+                    <a href="#join" class="btn text-uppercase fw-bold px-4 py-2" style="letter-spacing:1px; background:#007bff; border: 2px solid #007bff; font-size:1.05rem; color: #ffffff;">Download Now</a>
+                </div>
+                <button class="navbar-toggler ms-2 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="app-hero-section py-4 bg-white" style="background: white !important; margin-bottom: 12px; padding-bottom: 12px;">
+        <div class="container" style="max-width: 1100px;">
+            <div class="row align-items-center justify-content-center g-2" style="gap: 0;">
+                <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                    <h1 class="fw-bold mb-3" style="font-size: 2.8rem; color: #000000;">
+                        Pass Your DMV Test <br/> On The First Try
+                    </h1>
+                    <p class="mb-4" style="font-size: 1.1rem; color: #000000 !important;">
+                        Your comprehensive driving test preparation app with practice tests, study guides, and real exam questions to help you ace your DMV test with confidence.
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height:50px;"></a>
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" style="height:50px;"></a>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 position-relative d-flex justify-content-center justify-content-lg-end" style="background: transparent; box-shadow: none;">
+                    <div style="background: transparent; border-radius: 0; padding: 8px 0 8px 0; box-shadow: none; display: inline-block;">
+                        <img src="image/anh2.jpg" alt="App Preview" class="img-fluid app-image" style="width: 320px; height: 320px; max-width: 100%; background: transparent; border-radius: 0; box-shadow: none; object-fit: cover" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <style>
+         :root {
+            --main-color: #007bff;
+            --accent-color: #0056b3;
+            --text-color: #000000;
+            --card-bg: #ffffff;
+            --btn-color: #007bff;
+            --btn-hover: #0056b3;
+            --border-radius: 12px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .underline-animate::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 6px;
+            background: #007bff;
+            border-radius: 3px;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s cubic-bezier(.4, 0, .2, 1);
+        }
+        
+        .underline-animate:hover::after,
+        .underline-animate:focus::after {
+            transform: scaleX(1);
+        }
+        
+        .underline-animate {
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        
+        .navbar-collapse.menu-closed {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            transform: translateX(-100%) !important;
+        }
+        
+        @media (max-width: 991.98px) {
+            .navbar-collapse:not(.show) {
+                display: none !important;
+            }
+        }
+        
+        .plan-header {
+            padding-top: 60px;
+            text-align: center;
+        }
+        
+        .plan-header h1 {
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+        
+        .plan-header p {
+            color: #f9c7b8;
+            font-size: 1.4rem;
+            font-style: italic;
+        }
+        
+        .toggle-btn-group {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0 2.5rem 0;
+        }
+        
+        .toggle-btn {
+            border: none;
+            outline: none;
+            padding: 0.7rem 2.2rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 2rem;
+            background: #f2f6fa;
+            color: #222;
+            margin-right: 0.5rem;
+            transition: background 0.3s cubic-bezier(.4, 0, .2, 1), color 0.3s cubic-bezier(.4, 0, .2, 1);
+            box-shadow: 0 2px 12px 0 rgba(28, 207, 201, 0.08);
+        }
+        
+        .toggle-btn.active {
+            background: #f9c7b8;
+            color: #fff;
+            box-shadow: 0 4px 24px 0 rgba(70, 159, 214, 0.13);
+        }
+        
+        .toggle-btn:last-child {
+            margin-right: 0;
+        }
+        
+        .plan-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        .plan-card {
+            background: #fff;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 32px 0 rgba(28, 207, 201, 0.10);
+            padding: 2.5rem 2rem 2rem 2rem;
+            text-align: center;
+            flex: 1 1 320px;
+            max-width: 350px;
+            min-width: 260px;
+            position: relative;
+            transition: transform 0.35s cubic-bezier(.4, 0, .2, 1), box-shadow 0.35s cubic-bezier(.4, 0, .2, 1);
+        }
+        
+        .plan-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 40px 0 rgba(28, 207, 201, 0.18);
+        }
+        
+        .plan-card .plan-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+        
+        .plan-card .plan-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-style: italic;
+            color: #f9c7b8;
+            margin-bottom: 0.5rem;
+        }
+        
+        .plan-card .plan-name span {
+            border-bottom: 3px solid #f9c7b8;
+        }
+        
+        .plan-card .plan-img {
+            width: 90px;
+            height: 90px;
+            margin: 1.2rem auto 1.5rem auto;
+            background: #eaf8f7;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .plan-card .plan-price {
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: #0a1857;
+            margin-bottom: 0.2rem;
+        }
+        
+        .plan-card .plan-desc {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 1.2rem;
+            min-height: 48px;
+        }
+        
+        .plan-card .plan-footer {
+            border-top: 1px solid #eaf8f7;
+            margin-top: 1.2rem;
+            padding-top: 1rem;
+            font-size: 0.98rem;
+            color: #666;
+        }
+        
+        .plan-card.popular {
+            border: 2.5px solid #f9c7b8;
+            box-shadow: 0 8px 40px 0 rgba(70, 159, 214, 0.18);
+        }
+        
+        .plan-card .popular-badge {
+            position: absolute;
+            top: -22px;
+            right: 18px;
+            background: #f9c7b8;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 50%;
+            padding: 0.7rem 1.1rem;
+            box-shadow: 0 2px 12px 0 rgba(70, 159, 214, 0.13);
+        }
+        
+        .plan-free-badge {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #f9c7b8;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 50%;
+            padding: 0.7rem 1.1rem;
+            box-shadow: 0 2px 12px 0 rgba(70, 159, 214, 0.13);
+        }
+        
+        @media (max-width: 991px) {
+            .plan-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        .plan-card .plan-img img {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .plan-header {
+            text-align: center;
+        }
+        
+        .plan-badge {
+            background: linear-gradient(135deg, #f9c7b8, #2dd4bf);
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .plan-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        
+        .plan-price {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 0.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .plan-price .currency {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #666;
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+        
+        .plan-price .amount {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #f9c7b8;
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+        
+        .plan-price .period {
+            font-size: 1rem;
+            color: #666;
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
+        
+        .plan-price .free-text {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #f9c7b8;
+            margin-left: 0.5rem;
+            background: #d4edda;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        
+        .plan-features {
+            text-align: left;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            font-size: 0.95rem;
+            color: #555;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .plan-desc {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            text-align: center;
+        }
+        
+        .plan-card .btn {
+            border-radius: 25px;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .plan-card .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(70, 159, 214, 0.3);
+        }
+        
+        .btn-primary,
+        .btn-outline-primary {
+            background: var(--btn-color) !important;
+            border-color: var(--btn-color) !important;
+        }
+        
+        .btn-primary:hover,
+        .btn-outline-primary:hover {
+            background: var(--btn-hover) !important;
+            border-color: var(--btn-hover) !important;
+        }
+        
+        .text-muted {
+            color: #a97c6d !important;
+        }
+        
+        .bg-primary {
+            background: var(--main-color) !important;
+        }
+        
+        footer {
+            background: #f8f9fa !important;
+            color: #000;
+        }
+        /* Style cho nút đóng menu mobile */
+        
+        .btn-close {
+            filter: invert(1);
+            opacity: 1;
+        }
+        
+        .plan-header p,
+        .plan-card .plan-name,
+        .plan-card .plan-name span,
+        .plan-card.popular,
+        .plan-card .popular-badge,
+        .plan-free-badge,
+        .plan-badge,
+        .plan-price .amount,
+        .plan-price .free-text {
+            color: var(--main-color) !important;
+            border-color: var(--main-color) !important;
+            background: var(--main-color) !important;
+        }
+        
+        .app-hero-section {
+            background: #ffffff !important;
+        }
+        
+        body {
+            color: var(--text-color);
+            background-color: #ffffff;
+        }
+        
+        .benefit-card {
+            background: #ffffff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border: 1px solid #e0e0e0;
+        }
+        
+        .swiper {
+            width: 100%;
+            max-width: 100vw;
+            height: clamp(180px, 40vw, 500px);
+            margin: 0 auto;
+            border-radius: clamp(18px, 4vw, 40px);
+            background: transparent;
+            box-shadow: none;
+            padding-bottom: clamp(18px, 4vw, 50px);
+            position: relative;
+            overflow: visible;
+        }
+        
+        .swiper-wrapper {
+            align-items: center;
+        }
+        
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: none;
+            border-radius: clamp(18px, 4vw, 40px);
+            overflow: visible;
+            height: 100%;
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            perspective: 1000px;
+        }
+        
+        .swiper-slide img {
+            width: 100%;
+            max-width: clamp(90px, 18vw, 260px);
+            height: auto;
+            max-height: 90vh;
+            object-fit: cover;
+            border-radius: clamp(12px, 3vw, 36px);
+            box-shadow: 0 25px 60px 0 rgba(44, 180, 180, 0.15), 0 8px 25px 0 rgba(255, 177, 153, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+            margin: 0 clamp(4px, 2vw, 16px);
+            background: transparent !important;
+            display: block;
+            border: 3px solid rgba(255, 255, 255, 0.9);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transform: translateZ(0);
+            backdrop-filter: blur(1px);
+        }
+        
+        .swiper-slide:not(.swiper-slide-active) img {
+            transform: scale(0.9) translateY(10px);
+            opacity: 0.8;
+            filter: brightness(0.85);
+        }
+        
+        .swiper-slide.swiper-slide-active img {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 35px 80px 0 rgba(44, 180, 180, 0.25), 0 15px 35px 0 rgba(255, 177, 153, 0.3), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+            border: 3px solid rgba(255, 177, 153, 0.8);
+        }
+        
+        .swiper-slide img:hover {
+            transform: scale(1.08) translateY(-8px) rotateY(2deg);
+            box-shadow: 0 40px 100px 0 rgba(44, 180, 180, 0.3), 0 20px 45px 0 rgba(255, 177, 153, 0.4), 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+            border: 3px solid #FFB199;
+            filter: brightness(1.05) contrast(1.05);
+        }
+        
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #ffffff;
+            background: linear-gradient(135deg, #FFB199 0%, #FF9B7A 100%);
+            border-radius: 50%;
+            width: clamp(32px, 6vw, 56px);
+            height: clamp(32px, 6vw, 56px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(255, 177, 153, 0.3), 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            z-index: 10;
+        }
+        
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background: linear-gradient(135deg, #1a365d 0%, #2d5aa0 100%);
+            color: #ffffff;
+            transform: scale(1.1) translateY(-2px);
+            box-shadow: 0 12px 35px rgba(26, 54, 93, 0.4), 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: clamp(1.1rem, 3vw, 1.8rem);
+            font-weight: bold;
+        }
+        
+        .swiper-pagination {
+            bottom: clamp(4px, 2vw, 18px) !important;
+            display: flex;
+            justify-content: center;
+            gap: clamp(2px, 1vw, 8px);
+        }
+        
+        .swiper-pagination-bullet {
+            background: linear-gradient(135deg, #FFB199 0%, #FF9B7A 100%);
+            opacity: 0.6;
+            width: clamp(8px, 2vw, 16px);
+            height: clamp(8px, 2vw, 16px);
+            margin: 0 clamp(2px, 1vw, 6px) !important;
+            border-radius: 50%;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+        }
+        
+        .swiper-pagination-bullet:hover {
+            opacity: 0.8;
+            transform: scale(1.2);
+        }
+        
+        .swiper-pagination-bullet-active {
+            background: linear-gradient(135deg, #1a365d 0%, #2d5aa0 100%);
+            opacity: 1;
+            transform: scale(1.3);
+            box-shadow: 0 4px 12px rgba(26, 54, 93, 0.3);
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .swiper-slide-active img {
+            animation: slideIn 0.6s ease-out;
+        }
+        /* Loading state */
+        
+        .swiper-slide img[src=""] {
+            background: linear-gradient(45deg, #f0f0f0 25%, transparent 25%), linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #f0f0f0 75%), linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            animation: loading 1s linear infinite;
+        }
+        
+        @keyframes loading {
+            0% {
+                background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            }
+            100% {
+                background-position: 20px 20px, 20px 30px, 30px 10px, 10px 20px;
+            }
+        }
+        
+        @media (max-width: 575.98px) {
+            .swiper {
+                padding: 0 !important;
+            }
+            .swiper-slide {
+                width: 100vw !important;
+                max-width: 100vw !important;
+                margin: 0 !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+                background: transparent !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+            .swiper-slide img {
+                width: 100vw !important;
+                height: 70vw !important;
+                max-width: 100vw !important;
+                max-height: 80vw !important;
+                border-radius: 0 !important;
+                margin: 0 auto !important;
+                object-fit: contain !important;
+                display: block !important;
+            }
+        }
+        
+        .mySwiper .swiper-button-next,
+        .mySwiper .swiper-button-prev,
+        .mySwiper .swiper-pagination {
+            display: none !important;
+        }
+        
+        /* State PDF Cards Styling */
+        .state-pdf-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+            border-color: #007bff !important;
+        }
+        
+        .state-pdf-card .btn:hover {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+        }
+    </style>
+    <section class="py-5 slide-in-left" id="features" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <div class="benefit-card text-start h-100 p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <span style="font-size: 2rem; margin-right: 1rem;">📚</span>
+                            <div>
+                                <h3 class="mb-3" style="color: #000000;">Comprehensive Practice Tests</h3>
+                                <ul class="list-unstyled mb-0" style="color: #000000;">
+                                    <li class="mb-2">• Hundreds of real DMV test questions from all 50 states.</li>
+                                    <li class="mb-2">• Practice tests that mirror the actual exam format and difficulty.</li>
+                                    <li class="mb-2">• Track your progress and identify areas that need improvement.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="benefit-card text-start h-100 p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <span style="font-size: 2rem; margin-right: 1rem;">🚗</span>
+                            <div>
+                                <h3 class="mb-3" style="color: #000000;">Interactive Study Materials</h3>
+                                <ul class="list-unstyled mb-0" style="color: #000000;">
+                                    <li class="mb-2">• Visual road signs, traffic rules, and driving scenarios.</li>
+                                    <li class="mb-2">• Offline access to study materials for learning anywhere.</li>
+                                    <li class="mb-2">• Create custom study plans and track your learning progress.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="benefit-card text-start h-100 p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <span style="font-size: 2rem; margin-right: 1rem;">📊</span>
+                            <div>
+                                <h3 class="mb-3" style="color: #000000;">Smart Progress Tracking</h3>
+                                <ul class="list-unstyled mb-0" style="color: #000000;">
+                                    <li class="mb-2">• Detailed analytics of your test performance and weak areas.</li>
+                                    <li class="mb-2">• Personalized study reminders and exam scheduling.</li>
+                                    <li class="mb-2">• Adaptive learning that focuses on your problem areas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="benefit-card text-start h-100 p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <span style="font-size: 2rem; margin-right: 1rem;">🏆</span>
+                            <div>
+                                <h3 class="mb-3" style="color: #000000;">All States Coverage</h3>
+                                <ul class="list-unstyled mb-0" style="color: #000000;">
+                                    <li class="mb-2">• Complete coverage for all 50 US states and DC.</li>
+                                    <li class="mb-2">• State-specific rules, signs, and regulations included.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5 bg-white slide-in-right" id="about">
+        <div class="container">
+            <div class="row align-items-center position-relative">
+                <div class="col-md-6 mb-4 mb-md-0 position-relative">
+
+                    <div class="animated-circle circle-1"></div>
+                    <div class="animated-circle circle-2"></div>
+                    <img src="image/anh3.jpg" alt="Smart Meter" class="img-fluid rounded shadow-sm fade-in position-relative" style="z-index:2;">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-3 fade-in" style="color: #000000;">DMV Test Prep</h2>
+                    <p class="mb-4 fade-in" style="font-size:1.2rem; color:#000000; line-height:1.6;">
+                        Study smarter, practice effectively, and pass your driving test with confidence.
+                    </p>
+
+                    <a href="#" class="btn fade-in" style="background-color: #007bff; color: #ffffff; border: 2px solid #007bff;">Download Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white text-black text-center slide-in-left" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 0; padding-top: 12px; background-color: #ffffff !important;">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/Sound Sleep App Images for App Store Iphone (1)/1.jpg" class="d-block w-100" alt="Slide 1" style="max-height: 70vw; object-fit: contain;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Sound Sleep App Images for App Store Iphone (1)/EN (2).jpg" class="d-block w-100" alt="Slide 2" style="max-height: 70vw; object-fit: contain;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Sound Sleep App Images for App Store Iphone (1)/EN (3).jpg" class="d-block w-100" alt="Slide 2" style="max-height: 70vw; object-fit: contain;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Sound Sleep App Images for App Store Iphone (1)/EN (4).jpg" class="d-block w-100" alt="Slide 2" style="max-height: 70vw; object-fit: contain;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Sound Sleep App Images for App Store Iphone (1)/EN (5).jpg" class="d-block w-100" alt="Slide 2" style="max-height: 70vw; object-fit: contain;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Sound Sleep App Images for App Store Iphone (1)/EN (6).jpg" class="d-block w-100" alt="Slide 2" style="max-height: 70vw; object-fit: contain;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Sound Sleep App Images for App Store Iphone (1)/EN.jpg" class="d-block w-100" alt="Slide 2" style="max-height: 70vw; object-fit: contain;">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+            </div>
+            <a href="#" class="btn btn-lg px-4 fade-in" style="font-weight:700; letter-spacing:1px; margin-top: 24px; background-color: #007bff; color: #ffffff; border: 2px solid #007bff;">Download Now</a>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: #ffffff;">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5 fade-in" style="font-size:2.2rem; letter-spacing:1px; color:#000000;">Everything you need to pass your DMV test</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <div class="benefit-card text-start h-100 p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <span style="font-size: 2rem; margin-right: 1rem;">🎯</span>
+                            <div>
+                                <h3 class="mb-3" style="color: #000000;">AI-Powered Study Coach</h3>
+                                <p style="color: #000000;">Personalized study plans and test strategies tailored to your learning style and schedule.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="benefit-card text-start h-100 p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <span style="font-size: 2rem; margin-right: 1rem;">📖</span>
+                            <div>
+                                <h3 class="mb-3" style="color: #000000;">Comprehensive Study Library</h3>
+                                <p style="color: #000000;">Hundreds of practice questions, road signs, traffic laws, and driving scenarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="benefit-card text-start h-100 p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <span style="font-size: 2rem; margin-right: 1rem;">📈</span>
+                            <div>
+                                <h3 class="mb-3" style="color: #000000;">Smart Progress Tracking</h3>
+                                <p style="color: #000000;">Track your test scores, study time, and get detailed analytics to improve your performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="benefit-card text-start h-100 p-4">
+                        <div class="d-flex align-items-start mb-3">
+                            <span style="font-size: 2rem; margin-right: 1rem;">📅</span>
+                            <div>
+                                <h3 class="mb-3" style="color: #000000;">Exam Scheduling Assistant</h3>
+                                <p style="color: #000000;">Get reminders for your test date and last-minute study tips to ensure you're fully prepared.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- States PDF Section -->
+    <section class="py-5" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3" style="font-size:2.2rem; letter-spacing:1px; color:#000000;">State-Specific Study Materials</h2>
+                <p class="lead" style="color:#666; font-size:1.1rem;">Download official study guides and practice tests for your state</p>
+            </div>
+            
+            <div class="row g-3">
+                <!-- Alabama -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/alabamahb.png" alt="Alabama" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Alabama</h6>
+                        <a href="handbook/AL_Drivers-Manual-12-5-24 2.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Alaska -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/alaskahb.png" alt="Alaska" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Alaska</h6>
+                        <a href="handbook/AK_dlman.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Arizona -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/Arizonahb.png" alt="Arizona" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Arizona</h6>
+                        <a href="handbook/AZ_dm_25.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Arkansas -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/arkansashb.png" alt="Arkansas" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Arkansas</h6>
+                        <a href="handbook/AR_DL-Manual-English.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- California -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/californiahb.png" alt="California" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">California</h6>
+                        <a href="handbook/CA_SP-R1-2024.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Colorado -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/colaradohb.png" alt="Colorado" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Colorado</h6>
+                        <a href="handbook/CO_DR_2337_Jan2025.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Connecticut -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/connecticuthb.png" alt="Connecticut" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Connecticut</h6>
+                        <a href="handbook/CT_Drivers-Manual-English.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Delaware -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/delawarehb.png" alt="Delaware" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Delaware</h6>
+                        <a href="handbook/DE_frm_manual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Florida -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/floridahb.png" alt="Florida" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Florida</h6>
+                        <a href="handbook/FL_driverhandbook.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Georgia -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/georgiahb.png" alt="Georgia" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Georgia</h6>
+                        <a href="handbook/GA_Drivers-Manual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Hawaii -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/hawaiihb.png" alt="Hawaii" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Hawaii</h6>
+                        <a href="handbook/HI_Drivers-Manual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Idaho -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/idahohb.png" alt="Idaho" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Idaho</h6>
+                        <a href="handbook/ID_driver_manual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Illinois -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/illinois.png" alt="Illinois" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Illinois</h6>
+                        <a href="handbook/IL_drm.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Indiana -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/indianahb.png" alt="Indiana" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Indiana</h6>
+                        <a href="handbook/IN_drivers-manual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Iowa -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/iowahb.png" alt="Iowa" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Iowa</h6>
+                        <a href="handbook/IA_dlmanual_Aug.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Kansas -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/kansashb.png" alt="Kansas" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Kansas</h6>
+                        <a href="handbook/OK_DriverManual2023.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Kentucky -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/kentuckyhb.png" alt="Kentucky" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Kentucky</h6>
+                        <a href="handbook/Kentucky-Driver-Manual-10-11-2023.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Louisiana -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/louisianahb.png" alt="Louisiana" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Louisiana</h6>
+                        <a href="handbook/LA_Guide-2017.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Maine -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/mainehb.png" alt="Maine" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Maine</h6>
+                        <a href="handbook/ME_Driver-License-Manual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Maryland -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/marylandhb.png" alt="Maryland" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Maryland</h6>
+                        <a href="handbook/MD_DL-002_July.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Massachusetts -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/massachusettshb.png" alt="Massachusetts" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Massachusetts</h6>
+                        <a href="handbook/MA_Drivers_Manual_0723_En.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Michigan -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/michiganhb.png" alt="Michigan" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Michigan</h6>
+                        <a href="handbook/MI_WEDMK_2024.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Minnesota -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/minnesotahb.png" alt="Minnesota" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Minnesota</h6>
+                        <a href="handbook/MN_dvs-class-d-dm.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Mississippi -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/mississippihb.png" alt="Mississippi" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Mississippi</h6>
+                        <a href="handbook/MS_Drivers-Manual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Missouri -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/missourihb.png" alt="Missouri" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Missouri</h6>
+                        <a href="handbook/MO_Driver-Guide_24.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Montana -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/montanahb.png" alt="Montana" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Montana</h6>
+                        <a href="handbook/MT-Driver-Manual-English.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Nebraska -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/nebraskahb.png" alt="Nebraska" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Nebraska</h6>
+                        <a href="handbook/NE_engdrivermanual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Nevada -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/nevadahb.png" alt="Nevada" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Nevada</h6>
+                        <a href="handbook/NV_dlbook.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- New Hampshire -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/new_hampshirehb.png" alt="New Hampshire" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">New Hampshire</h6>
+                        <a href="handbook/nh_dm.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- New Jersey -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/new_jerseyhb.png" alt="New Jersey" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">New Jersey</h6>
+                        <a href="handbook/NJ_drivermanual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- New Mexico -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/new_mexicohb.png" alt="New Mexico" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">New Mexico</h6>
+                        <a href="handbook/NM_English-Drivers-Manualver11.19.19.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- New York -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/new_yorkhb.png" alt="New York" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">New York</h6>
+                        <a href="handbook/NY_21.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- North Carolina -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/north_carolinahb.png" alt="North Carolina" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">North Carolina</h6>
+                        <a href="handbook/NC_driver-handbook.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- North Dakota -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/north_dakotahb.png" alt="North Dakota" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">North Dakota</h6>
+                        <a href="handbook/ND_drmanual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Ohio -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/ohiohb.png" alt="Ohio" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Ohio</h6>
+                        <a href="handbook/OH_hsy7607_en.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Oklahoma -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/oklahomahb.png" alt="Oklahoma" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Oklahoma</h6>
+                        <a href="handbook/OK_DriverManual2023.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Oregon -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/oregonhb.png" alt="Oregon" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Oregon</h6>
+                        <a href="handbook/OR_drm.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Pennsylvania -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/pennsylvaniahb.png" alt="Pennsylvania" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Pennsylvania</h6>
+                        <a href="handbook/PA_PUB-95.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Rhode Island -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/rhode_islandhb.png" alt="Rhode Island" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Rhode Island</h6>
+                        <a href="handbook/RI_Drivers-Manual-April-2024.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- South Carolina -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/south_carolinahb.png" alt="South Carolina" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">South Carolina</h6>
+                        <a href="handbook/SC_Drivers-Manual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- South Dakota -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/south_dakotahb.png" alt="South Dakota" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">South Dakota</h6>
+                        <a href="handbook/SD_-car-manual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Tennessee -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/tennesseehb.png" alt="Tennessee" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Tennessee</h6>
+                        <a href="handbook/TN_DL_Manual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Texas -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/texashb.png" alt="Texas" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Texas</h6>
+                        <a href="handbook/TX_DL-7.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Utah -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/utahhb.png" alt="Utah" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Utah</h6>
+                        <a href="handbook/UT_Driver-Handbook-2024.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Vermont -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/vermonthb.png" alt="Vermont" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Vermont</h6>
+                        <a href="handbook/VN-007-Drivers_Manual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Virginia -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/virginiahb.png" alt="Virginia" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Virginia</h6>
+                        <a href="handbook/VA_dmv39.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Washington -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/washingtonhb.png" alt="Washington" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Washington</h6>
+                        <a href="handbook/WA_driverguide-en.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- West Virginia -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/west_virginiahb.png" alt="West Virginia" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">West Virginia</h6>
+                        <a href="handbook/WV_dm.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Wisconsin -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/wisconsinhb.png" alt="Wisconsin" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Wisconsin</h6>
+                        <a href="handbook/WI_handbook.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Wyoming -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/wyominghb.png" alt="Wyoming" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Wyoming</h6>
+                        <a href="handbook/WY_2021_DriverManual.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+                
+                <!-- Washington DC -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="state-pdf-card p-3 text-center border rounded-3 h-100" style="background-color: #f8f9fa; border-color: #e0e0e0 !important; transition: all 0.3s ease;">
+                        <div class="mb-2">
+                            <img src="image_hb/district_of_columbiahb.png" alt="Washington DC" style="width: 60px; height: 60px; object-fit: contain;">
+                        </div>
+                        <h6 class="fw-bold mb-2" style="color: #000000;">Washington DC</h6>
+                        <a href="handbook/DC_Driver-Manual_English.pdf" class="btn btn-sm btn-outline-primary" target="_blank">View PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row g-4 justify-content-center align-items-stretch">
+
+                <div class="col-12 col-md-6 slide-in-right d-flex align-items-stretch">
+                    <div class="p-4 bg-white rounded-4 shadow-sm w-100 h-100" style="background-color: #ffffff !important; border: 1px solid #e0e0e0;">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label class="form-label fw-semibold" style="color: #000000;">Your Name</label>
+                                    <input type="text" class="form-control rounded-3" style="background-color: #ffffff;" placeholder="Enter your name" required>
+                                </div>
+                                <div class="col">
+                                    <label class="form-label fw-semibold" style="color: #000000;">Your Email</label>
+                                    <input type="email" class="form-control rounded-3" style="background-color: #ffffff;" placeholder="Enter your email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold" style="color: #000000;">Subject</label>
+                                <input type="text" class="form-control rounded-3" style="background-color: #ffffff;" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold" style="color: #000000;">Message</label>
+                                <textarea class="form-control rounded-3" style="background-color: #ffffff;" rows="4" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn px-4 py-2 rounded-pill" style="min-width:160px; width: 100%; height: auto; background-color: #007bff; color: #ffffff;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-start gap-4">
+                    <h3 class="fw-bold text-center mb-4 fade-in" style="color:#000000;">Loved by thousands of successful drivers</h3>
+                    <div class="testimonial-box flex-fill" style="background-color: #ffffff; border: 1px solid #e0e0e0;">
+                        <div class="mb-3 text-center" style="color: #007bff; font-size: 1rem;">⭐️⭐️⭐️⭐️⭐️</div>
+                        <blockquote style="color: #000000; font-size: 0.95rem; line-height: 1.5;">
+                            "I was so nervous about my DMV test. This app helped me practice and I passed on my first try!"
+                        </blockquote>
+                        <cite style="color: #007bff; font-weight: 600;">— Sarah K.</cite>
+                    </div>
+                    <div class="testimonial-box flex-fill" style="background-color: #ffffff; border: 1px solid #e0e0e0;">
+                        <div class="mb-3 text-center" style="color: #007bff; font-size: 1rem;">⭐️⭐️⭐️⭐️⭐️</div>
+                        <blockquote style="color: #000000; font-size: 0.95rem; line-height: 1.5;">
+                            "The practice tests were exactly like the real exam. I felt confident and prepared!"
+                        </blockquote>
+                        <cite style="color: #007bff; font-weight: 600;">— Daniel P.</cite>
+                    </div>
+                    <div class="testimonial-box flex-fill" style="background-color: #ffffff; border: 1px solid #e0e0e0;">
+                        <div class="mb-3 text-center" style="color: #007bff; font-size: 1rem;">⭐️⭐️⭐️⭐️⭐️</div>
+                        <blockquote style="color: #000000; font-size: 0.95rem; line-height: 1.5;">
+                            "As a busy student, I needed flexible study options. This app fit perfectly into my schedule."
+                        </blockquote>
+                        <cite style="color: #007bff; font-weight: 600;">— Mia L.</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4" style="background: #f8f9fa; color: #000;">
+        <div class="container">
+            <!-- Email line -->
+
+            <!-- Links line -->
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-3 mb-2 small">
+                <a href="mailto:info@freeaimitlabs.com" class="text-dark fw-semibold text-decoration-none d-flex align-items-center">
+                    <i class="fa fa-envelope me-1"></i> info@freeaimitlabs.com
+                </a>
+                <span class="d-inline-block text-dark">|</span>
+                <a href="termofuse.html" class="text-decoration-none text-dark">Terms of Service</a>
+                <span class="d-inline-block text-dark">|</span>
+                <a href="privacy.html" class="text-decoration-none text-dark">Privacy Policy</a>
+            </div>
+            <div class="text-center mt-2" style="opacity:0.7; font-size:0.95rem; color:#000" 
+            
+            >&copy; 2025 DMV Test App™ – Your path to driving success.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const href = this.getAttribute('href');
+                    let targetId = href;
+                    if (href.includes('#')) {
+                        targetId = href.split('#')[1];
+                    }
+                    if (targetId === '#' || targetId === '#join' || targetId === '#download') {
+                        return;
+                    }
+
+                    const targetElement = document.querySelector('#' + targetId);
+                    if (targetElement) {
+                        const navbar = document.getElementById('navbarNav');
+                        const isMobileMenuOpen = navbar && navbar.classList.contains('show');
+
+                        if (isMobileMenuOpen) {
+                            setTimeout(() => {
+                                scrollToSection(targetElement);
+                            }, 350);
+                        } else {
+                            scrollToSection(targetElement);
+                        }
+                    }
+                });
+            });
+
+            function scrollToSection(targetElement) {
+                const headerHeight = 64;
+                const targetPosition = targetElement.offsetTop - headerHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+            document.querySelectorAll('.btn-close.d-lg-none').forEach(function(closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    var navbar = document.getElementById('navbarNav');
+                    if (navbar) {
+                        var bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbar);
+                        bsCollapse.hide();
+                    }
+                });
+            });
+            const monthlyBtn = document.getElementById('monthlyBtn');
+            const annualBtn = document.getElementById('annualBtn');
+            const planCards = document.querySelectorAll('.plan-card');
+
+            if (monthlyBtn && annualBtn) {
+                monthlyBtn.addEventListener('click', function() {
+                    monthlyBtn.classList.add('active');
+                    annualBtn.classList.remove('active');
+                    updatePrices('monthly');
+                });
+
+                annualBtn.addEventListener('click', function() {
+                    annualBtn.classList.add('active');
+                    monthlyBtn.classList.remove('active');
+                    updatePrices('annual');
+                });
+            }
+
+            function updatePrices(period) {
+                const prices = {
+                    monthly: {
+                        basic: 0,
+                        premium: 0,
+                        pro: 0
+                    },
+                    annual: {
+                        basic: 0,
+                        premium: 0,
+                        pro: 0
+                    }
+                };
+
+                const currentPrices = prices[period];
+                const amountElements = document.querySelectorAll('.plan-price .amount');
+
+                amountElements.forEach((element, index) => {
+                    element.textContent = '0';
+                });
+            }
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>
